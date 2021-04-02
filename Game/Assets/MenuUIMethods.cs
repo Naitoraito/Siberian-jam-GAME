@@ -4,9 +4,10 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
+
+
 public class MenuUIMethods : MonoBehaviour
 {
-
     public void LoadGame()
     {
         StartCoroutine(Gradient());
