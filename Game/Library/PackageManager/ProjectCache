@@ -5,7 +5,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637528658579838650
+      ticks: 637528849659200109
     m_Hash: 3086559985
   m_LockFileStatus:
     m_FilePath: C:/github/Siberian-jam-GAME/Game/Packages/packages-lock.json
@@ -13,7 +13,7 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 637528658599577650
+      ticks: 637528849678939447
     m_Hash: 1889107499
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
