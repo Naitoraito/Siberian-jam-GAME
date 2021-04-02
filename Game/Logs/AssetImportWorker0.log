@@ -353,3 +353,4 @@ Received Import Request.
 Start importing Assets/InHouse.unity using Guid(8aa91b303fe09484e80341dad5645d83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0b97af31dbea14ff37ab87c8b971800c') in 0.001283 seconds
   Import took 0.002840 seconds .
 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
