@@ -9,7 +9,9 @@ using UnityEngine.SceneManagement;
 public class MenuUIMethods : MonoBehaviour
 {
 
-    public RectTransform mytransform;
+    public Transform mytransform;
+    public AnimationCurve curve;
+    public int miliSeconds;
     public void LoadGame()
     {
         StartCoroutine(Gradient());
@@ -17,17 +19,17 @@ public class MenuUIMethods : MonoBehaviour
 
     public IEnumerator Gradient()
     {
-        while (mytransform.localScale.x <= 3)
-        {
-            
-            yield return new WaitForSeconds(0.05f);
-            mytransform.localScale += new Vector3(0.05f, 0.05f, 0);
-            
-        }
-        yield return new WaitForSeconds(0.5f);
+        AsyncOperation loadScene = SceneManager.LoadSceneAsync(1);
+        loadScene.allowSceneActivation = false;
 
-        SceneManager.LoadSceneAsync(1);
-        
-        
+        for(float i =0; i < 1f; i += 1f/miliSeconds)
+        {
+            mytransform.localScale += new Vector3(curve.Evaluate(i), curve.Evaluate(i), 0);
+            yield return new WaitForSeconds(0.01f);
+        }
+        loadScene.allowSceneActivation = true;
+
+
+
     }
 }
