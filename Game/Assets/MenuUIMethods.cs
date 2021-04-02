@@ -8,8 +8,10 @@ using UnityEngine.SceneManagement;
 
 public class MenuUIMethods : MonoBehaviour
 {
-
-    public RectTransform mytransform;
+<<<<<<< HEAD
+=======
+    public RectTransform transform;
+>>>>>>> 7f9198a714f7d23e61c7644316f263e1f22ad2e0
     public void LoadGame()
     {
         StartCoroutine(Gradient());
@@ -17,11 +19,11 @@ public class MenuUIMethods : MonoBehaviour
 
     public IEnumerator Gradient()
     {
-        while (mytransform.localScale.x <= 3)
+        while (transform.localScale.x <= 3)
         {
             
-            yield return new WaitForSeconds(0.05f);
-            mytransform.localScale += new Vector3(0.05f, 0.05f, 0);
+            yield return new WaitForSeconds(0.1f);
+            transform.localScale += new Vector3(0.1f, 0.1f, 0);
             
         }
         yield return new WaitForSeconds(0.5f);
