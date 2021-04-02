@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Fields : MonoBehaviour
 {
@@ -8,18 +9,11 @@ public class Fields : MonoBehaviour
     public static Fields instance;
     public SDSample saveData;
     public GameObject tutorial;
+    public Image darkScreen;
 
     private void Awake()
     {
         instance = this;
     }
 
-    void Start()
-    {
-        if(saveData.isFirstGameOpen == true)
-        {
-            Instantiate<GameObject>(tutorial);
-            saveData.isFirstGameOpen = false;
-        }
-    }
 }

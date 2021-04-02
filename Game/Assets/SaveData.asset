@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: SaveData
   m_EditorClassIdentifier: 
   isFirstGameOpen: 0
+  Day: 1
