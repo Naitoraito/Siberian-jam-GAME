@@ -11,14 +11,19 @@ public class DialogTamplate : ScriptableObject
 [System.Serializable]
 public class Dialog
 {
-    public Characters opponent;
+    public Sprite human;
+    public Sprite fishman;
+    [Space(25)]
+    public Speekers[] whoSpeaks;
     [TextArea(3, 10)]
     public string[] question;
+    [Space(25)]
     public Answer Ybutton;
+    [Space(10)]
     public Answer Nbutton;
-    [Space(20)]
-    public GameObject addedItem;
-    public GameObject removedItem;
+    [Space(25)]
+    public GameObject[] addedItem;
+    public GameObject[] removedItem;
 }
 
 [System.Serializable]
@@ -26,21 +31,13 @@ public class Answer
 {
     public string buttonText;
     public int carma;
+    public Speekers[] whoSpeaks;
     [TextArea(3, 10)]
     public string[] answer;
 }
 
-public enum Characters
+public enum Speekers
 {
-    гопники,
-    бабки,
-    начальник,
-    капитан,
-    бомж,
-    продовщица,
-    гопбаба,
-    говнарь,
-    девочка,
-    гг,
-    ггрыба
+    Me,
+    Opponent
 }

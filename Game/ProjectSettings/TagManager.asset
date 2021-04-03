@@ -38,6 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: NonHidenUi
+    uniqueID: 2787022965
+    locked: 0
+  - name: Dialogs
+    uniqueID: 107193789
+    locked: 0
+  - name: New Layer
+    uniqueID: 753365865
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

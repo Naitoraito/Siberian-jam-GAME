@@ -13,41 +13,27 @@ MonoBehaviour:
   m_Name: Dialogue
   m_EditorClassIdentifier: 
   dialogs:
-  - opponent: 0
-    question:
-    - sdfsd
-    - sdfsd
-    Ybutton:
-      buttonText: ds
-      carma: 0
-      answer: []
-    Nbutton:
-      buttonText: 
-      carma: 0
-      answer: []
-    addedItem: {fileID: 0}
-    removedItem: {fileID: 0}
-  - opponent: 0
+  - human: {fileID: 0}
+    fishman: {fileID: 0}
+    whoSpeaks: 0000000000000000
     question: []
     Ybutton:
       buttonText: 
       carma: 0
+      whoSpeaks: 
       answer: []
     Nbutton:
       buttonText: 
       carma: 0
-      answer: []
-    addedItem: {fileID: 0}
-    removedItem: {fileID: 0}
-  - opponent: 0
-    question: []
-    Ybutton:
-      buttonText: 
-      carma: 0
-      answer: []
-    Nbutton:
-      buttonText: 
-      carma: 0
-      answer: []
-    addedItem: {fileID: 0}
-    removedItem: {fileID: 0}
+      whoSpeaks: 000000000100000001000000000000000100000000000000
+      answer:
+      - 
+      - 
+      - 
+      - 
+    addedItem:
+    - {fileID: 0}
+    removedItem:
+    - {fileID: 0}
+    - {fileID: 0}
+    - {fileID: 0}

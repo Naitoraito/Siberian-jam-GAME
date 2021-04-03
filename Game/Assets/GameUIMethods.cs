@@ -45,16 +45,11 @@ public class GameUIMethods : MonoBehaviour
     }
     public void AddedCarma(int carma)
     {
-        StartCoroutine(GradientCarmaUpdate(carma));
+        SDSample saveData = Fields.instance.saveData;
+        saveData.Carma += carma;
+        saveData.Carma = Mathf.Clamp(saveData.Carma, 0, 100);
     }
-    IEnumerator GradientCarmaUpdate(int carma)
-    {
-        for(int i = 0; i < carma; i++)
-        {
-            Fields.instance.saveData.Carma += (carma / Mathf.Abs(carma));
-            yield return new WaitForSeconds(0.01f);
-        }
-    }
+    
     public void GoHome()
     {
         Camera.main.transform.position = new Vector3(0, 0, -10);
