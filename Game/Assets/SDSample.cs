@@ -6,5 +6,8 @@ using UnityEngine;
 public class SDSample : ScriptableObject
 {
     public bool isFirstGameOpen;
+    [Range(1, 3)]
     public int Day = 1;
+    [Range(0, 100)]
+    public int Carma;
 }

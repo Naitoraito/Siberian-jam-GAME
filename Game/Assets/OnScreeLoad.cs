@@ -10,11 +10,6 @@ public class OnScreeLoad : MonoBehaviour
         StartCoroutine(Gradient());
     }
 
-    void Update()
-    {
-        
-    }
-
     public IEnumerator Gradient()
     {
         Image darkScreen = Fields.instance.darkScreen;

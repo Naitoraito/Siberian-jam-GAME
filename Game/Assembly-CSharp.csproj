@@ -64,6 +64,7 @@
     <Compile Include="Assets\MenuUIMethods.cs" />
     <Compile Include="Assets\GameUIMethods.cs" />
     <Compile Include="Assets\InteractivItem.cs" />
+    <Compile Include="Assets\Checker.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

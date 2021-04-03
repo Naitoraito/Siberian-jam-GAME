@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameUIMethods : MonoBehaviour
@@ -41,5 +42,20 @@ public class GameUIMethods : MonoBehaviour
         }
         darkScreen.color = Color.clear;
         darkScreen.gameObject.SetActive(false);
+    }
+    public void AddedCarma(int carma)
+    {
+        Debug.Log(carma);
+        Fields.instance.saveData.Carma += carma;
+    }
+    public void GoHome()
+    {
+        Camera.main.transform.position = new Vector3(0, 0, -10);
+    }
+    public void Restartlvl()
+    {
+        SceneManager.LoadSceneAsync(1);
+        if (Fields.instance.saveData.Day < 3)
+            Fields.instance.saveData.Day += 1;
     }
 }
