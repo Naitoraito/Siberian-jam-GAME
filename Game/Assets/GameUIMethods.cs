@@ -45,8 +45,15 @@ public class GameUIMethods : MonoBehaviour
     }
     public void AddedCarma(int carma)
     {
-        Debug.Log(carma);
-        Fields.instance.saveData.Carma += carma;
+        StartCoroutine(GradientCarmaUpdate(carma));
+    }
+    IEnumerator GradientCarmaUpdate(int carma)
+    {
+        for(int i = 0; i < carma; i++)
+        {
+            Fields.instance.saveData.Carma += (carma / Mathf.Abs(carma));
+            yield return new WaitForSeconds(0.01f);
+        }
     }
     public void GoHome()
     {
