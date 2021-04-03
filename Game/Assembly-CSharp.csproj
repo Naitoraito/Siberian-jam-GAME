@@ -63,6 +63,7 @@
     <Compile Include="Assets\OnScreeLoad.cs" />
     <Compile Include="Assets\MenuUIMethods.cs" />
     <Compile Include="Assets\GameUIMethods.cs" />
+    <Compile Include="Assets\InteractivItem.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
